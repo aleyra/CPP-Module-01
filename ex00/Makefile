@@ -1,15 +1,15 @@
 .PHONY: all clean fclean re
 # Name of file
-NAME		=	phonebook
+NAME		=	zombie
 
 # Name directory
 PATH_OBJ	=	objs
 
 #List of sources
-SRCS		=	phonebook.cpp contact.cpp main.cpp
+SRCS		=	Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
 
 OBJS		=	$(addprefix $(PATH_OBJ)/, $(SRCS:.cpp=.o))
-INCS		=	phonebook.hpp contact.hpp
+INCS		=	Zombie.hpp
 
 # Commands of compilation
 COMP		=	clang++
