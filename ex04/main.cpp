@@ -28,12 +28,15 @@ int	main(int ac, char **av)
 		std::cout << "Unable to open " << av[1] << std::endl;
 		return (1);
 	}
+	
 	std::string filename (av[1]);
 	filename.append(".replace");
 	std::ofstream newfile;
 	newfile.open (filename);
+
 	std::string toBeReplace(av[2]);
 	std::size_t len = toBeReplace.length();
+
 	while (getline(oldfile, line)){
 		if (first == 0)
 			newfile << std::endl;
