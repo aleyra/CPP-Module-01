@@ -13,6 +13,7 @@ public:
 	~HumanA();
 
 	void	attack( void ) const;
+	void	displayAdd( void );//
 };
 
 #endif
