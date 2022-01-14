@@ -5,7 +5,7 @@
 int	check_av(int ac, char **av)
 {
 	(void)av;
-	if (ac < 4 || av[2][0] == 0 || av[3][0] == 0){
+	if (ac < 4 || av[2][0] == 0 || av[3][0] == 0 || ac > 4){
 		std::cout << "Please enter a filename and 2 strings not empty"
 			<< std::endl;
 		return (1);
