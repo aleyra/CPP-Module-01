@@ -8,8 +8,8 @@ int	main(){
 		HumanA	bob("Bob", club);
 		bob.attack();
 		club.setType("some other type of club");
-		std::cout << club.getType() << std::endl;//
-		std::cout << bob.weapon_type->getType() << std::endl;//
+		std::cout << "address club = " << &club << std::endl;//
+		std::cout << "address bob's weapon = " << &(bob.weapon_type) << std::endl;
 		bob.attack();
 	}
 	{

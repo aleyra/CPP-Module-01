@@ -9,6 +9,7 @@ HumanA::~HumanA(){
 }
 
 void	HumanA::attack( void ) const{
+	std::string str (this->weapon_type->getType());
 	std::cout << this->name << " attacks with his "
-		<< this->weapon_type->getType() << std::endl;
+		<< str << std::endl;
 }
