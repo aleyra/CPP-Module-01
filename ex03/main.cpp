@@ -5,7 +5,7 @@ int	main(){
 	{
 		Weapon	club = Weapon("crude spiked club");
 		
-		std::cout << "address club = " << &club << std::endl;//
+		// std::cout << "address club = " << &club << std::endl;//
 		HumanA	bob("Bob", club);
 		// bob.displayAdd();
 		bob.attack();
