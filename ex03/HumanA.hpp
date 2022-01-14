@@ -8,7 +8,7 @@ class HumanA{
 
 public:
 	std::string	name;
-	Weapon		weapon_type;
+	Weapon		*weapon_type;
 	HumanA( std::string name, Weapon weapon_name );
 	~HumanA();
 
