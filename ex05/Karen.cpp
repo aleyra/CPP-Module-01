@@ -1,7 +1,31 @@
 #include "Karen.hpp"
 
-void	Karen::complain( std::string level ){
+Karen::Karen( void ){
 
+}
+
+Karen::~Karen( void ){
+
+}
+
+void	Karen::complain( std::string level ){
+	std::string lvl[4] = {
+		"debug",
+		"info",
+		"warning",
+		"error"
+	};
+	void	(Karen::*sentence[])( void ) = {
+		&Karen::_debug,
+		&Karen::_info,
+		&Karen::_warning,
+		&Karen::_error
+	};
+	for (int i = 0; i < 4; i++){
+		void (Karen::*reflex)(void) = sentence[i];
+		if (level.compare(lvl[i]) == 0)
+			(this->*reflex)();
+	}
 }
 
 void	Karen::_debug( void ){

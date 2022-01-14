@@ -7,6 +7,8 @@
 class Karen{
 
 public:
+	Karen(void);
+	~Karen(void);
 	void	complain( std::string level );
 
 private:
