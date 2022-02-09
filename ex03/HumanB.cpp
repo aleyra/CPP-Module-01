@@ -8,7 +8,7 @@ HumanB::~HumanB( void ){
 }
 
 void	HumanB::attack( void ) const{
-	std::cout << this->name << " attacks with his "
+	std::cout << this->name << " attacks with their "
 		<< this->weapon_type->getType() << std::endl;
 }
 
